@@ -38,10 +38,12 @@ function Show_notes() {
     }
     let html = "";
     Objnotes.forEach(function(element, index) {
-        html += `<div class="bg-info text-light card text-center my-5 mx-3" style="width: 18rem;">
+        html += `<div class="bg-secondary text-light card text-center my-5 mx-3" style="width: 18rem;">
         <div class="card-body">
             <h5 class="card-title">Message ${index+1}</h5>
+            <hr>
             <p>${element}</p>
+            <hr>
             <button type="button" onclick = "delete_Message(this.id)" class="btn btn-success m-2 px-2" id=${index}><b>Delete</b></button>
         </div>
     </div>`;
